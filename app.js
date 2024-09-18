@@ -32,7 +32,7 @@ guessBtn.addEventListener("click", () => {
       message.style.color = "#00adb5"; // Bright turquoise for correct guess
     }
   } else {
-    message.textContent = "enough bro get out";
+    message.textContent = `You lost! The correct number was ${randomNumber}. Restarting game...`;
     message.style.color = "#ff5c8d";
     resetGame();
   }
